@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <uexplugins>
-    <plugin uexName="uexWheel" version="3.0.11" build = "11">
-        <info>11:修复全圆轮盘菜单调用close方法无效的问题</info>
+    <plugin uexName="uexWheel" version="3.0.12" build = "12">
+		<info>12:修复openSemicircle接口，点击按钮后页面无法操作问题</info>
+        <build>11:修复全圆轮盘菜单调用close方法无效的问题</build>
         <build>10:添加监听方法uexWheel.onClick,当点击轮盘中心圆时触发</build>
         <build>9:转动轮盘，不触发事件（不回调），只有点击转到当前轮盘最上面的一个才触发事件（有回调）点击轮盘中间圆球，触发事件（回调）</build>
         <build>8:修复进入下一个页面，轮盘插件的button按钮仍然显示的问题</build>
