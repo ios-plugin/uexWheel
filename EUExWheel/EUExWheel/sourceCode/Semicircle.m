@@ -52,6 +52,7 @@
 -(void)sendBack:(NSString *)str {
     int i = [str intValue];
     [self.uexObj jsSuccessWithName:@"uexWheel.cbSelect" opId:i dataType:UEX_CALLBACK_DATATYPE_TEXT strData:str];
+    [self close];//关闭当前view
 }
 
 @end
