@@ -15,7 +15,6 @@
 		3C157FE61A0CDB7800FEE473 /* CDIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C157FDE1A0CDB7800FEE473 /* CDIconView.m */; };
 		3C157FE71A0CDB7800FEE473 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C157FE01A0CDB7800FEE473 /* Common.m */; };
 		3CC3CA4619F27EB700657464 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC3CA4519F27EB700657464 /* Foundation.framework */; };
-		3CC3CA4B19F27EB700657464 /* EUExWheel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3CC3CA4A19F27EB700657464 /* EUExWheel.h */; };
 		3CC3CA4D19F27EB700657464 /* EUExWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC3CA4C19F27EB700657464 /* EUExWheel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3CC3CAA019F27F0E00657464 /* MySingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC3CA7219F27F0E00657464 /* MySingleton.m */; };
 		3CC3CAA119F27F0E00657464 /* RNExpandingButtonBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC3CA7519F27F0E00657464 /* RNExpandingButtonBar.m */; };
@@ -26,20 +25,8 @@
 		3CC3CAAD19F27F0E00657464 /* Quartercircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC3CA9819F27F0E00657464 /* Quartercircle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3CC3CAB019F27F0E00657464 /* Semicircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC3CA9F19F27F0E00657464 /* Semicircle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3CC3CAC519F287B100657464 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC3CAC419F287B100657464 /* MyView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		42EE610D1C2AA761007CFCB4 /* iPod Click.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 42EE610C1C2AA761007CFCB4 /* iPod Click.aiff */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		3CC3CA4019F27EB700657464 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				3CC3CA4B19F27EB700657464 /* EUExWheel.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3C157FD31A0CDB7800FEE473 /* CDCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCircle.h; sourceTree = "<group>"; };
@@ -89,6 +76,8 @@
 		3CC3CA9F19F27F0E00657464 /* Semicircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Semicircle.m; sourceTree = "<group>"; };
 		3CC3CAC319F287B100657464 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
 		3CC3CAC419F287B100657464 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		42EE61061C2AA71D007CFCB4 /* uexWheel.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uexWheel.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EE610C1C2AA761007CFCB4 /* iPod Click.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "iPod Click.aiff"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +86,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CC3CA4619F27EB700657464 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EE61031C2AA71D007CFCB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				3CC3CA4719F27EB700657464 /* EUExWheel */,
+				42EE61071C2AA71D007CFCB4 /* uexWheelBundle */,
 				3CC3CA4419F27EB700657464 /* Frameworks */,
 				3CC3CA4319F27EB700657464 /* Products */,
 			);
@@ -137,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				3CC3CA4219F27EB700657464 /* libuexWheel.a */,
+				42EE61061C2AA71D007CFCB4 /* uexWheel.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -260,6 +258,14 @@
 			path = semicircle;
 			sourceTree = "<group>";
 		};
+		42EE61071C2AA71D007CFCB4 /* uexWheelBundle */ = {
+			isa = PBXGroup;
+			children = (
+				42EE610C1C2AA761007CFCB4 /* iPod Click.aiff */,
+			);
+			path = uexWheelBundle;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -269,7 +275,6 @@
 			buildPhases = (
 				3CC3CA3E19F27EB700657464 /* Sources */,
 				3CC3CA3F19F27EB700657464 /* Frameworks */,
-				3CC3CA4019F27EB700657464 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -280,6 +285,23 @@
 			productReference = 3CC3CA4219F27EB700657464 /* libuexWheel.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		42EE61051C2AA71D007CFCB4 /* uexWheelBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42EE610B1C2AA71D007CFCB4 /* Build configuration list for PBXNativeTarget "uexWheelBundle" */;
+			buildPhases = (
+				42EE61021C2AA71D007CFCB4 /* Sources */,
+				42EE61031C2AA71D007CFCB4 /* Frameworks */,
+				42EE61041C2AA71D007CFCB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uexWheelBundle;
+			productName = uexWheelBundle;
+			productReference = 42EE61061C2AA71D007CFCB4 /* uexWheel.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -288,6 +310,11 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = com.zywx;
+				TargetAttributes = {
+					42EE61051C2AA71D007CFCB4 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
 			};
 			buildConfigurationList = 3CC3CA3D19F27EB700657464 /* Build configuration list for PBXProject "EUExWheel" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -302,9 +329,21 @@
 			projectRoot = "";
 			targets = (
 				3CC3CA4119F27EB700657464 /* EUExWheel */,
+				42EE61051C2AA71D007CFCB4 /* uexWheelBundle */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42EE61041C2AA71D007CFCB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE610D1C2AA761007CFCB4 /* iPod Click.aiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3CC3CA3E19F27EB700657464 /* Sources */ = {
@@ -328,6 +367,13 @@
 				3C157FE51A0CDB7800FEE473 /* CDIconLabel.m in Sources */,
 				3C157FE11A0CDB7800FEE473 /* CDCircle.m in Sources */,
 				3C157FE41A0CDB7800FEE473 /* CDCircleThumb.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EE61021C2AA71D007CFCB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +474,54 @@
 			};
 			name = Release;
 		};
+		42EE61091C2AA71D007CFCB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = NO;
+				CONFIGURATION_BUILD_DIR = $SRCROOT/uexWheel/;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zywx.uexWheelBundle;
+				PRODUCT_NAME = uexWheel;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		42EE610A1C2AA71D007CFCB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = NO;
+				CONFIGURATION_BUILD_DIR = $SRCROOT/uexWheel/;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zywx.uexWheelBundle;
+				PRODUCT_NAME = uexWheel;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -445,6 +539,15 @@
 			buildConfigurations = (
 				3CC3CA6619F27EB700657464 /* Debug */,
 				3CC3CA6719F27EB700657464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42EE610B1C2AA71D007CFCB4 /* Build configuration list for PBXNativeTarget "uexWheelBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EE61091C2AA71D007CFCB4 /* Debug */,
+				42EE610A1C2AA71D007CFCB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

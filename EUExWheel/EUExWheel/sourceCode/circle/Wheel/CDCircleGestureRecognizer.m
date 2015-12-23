@@ -134,7 +134,7 @@
                        
 
                        SystemSoundID soundID;
-                       NSString *filePath = [[NSBundle mainBundle] pathForResource:@"uexWheel/iPod Click" ofType:@"aiff"];
+                       NSString *filePath = [[UEX_BUNDLE resourcePath] stringByAppendingPathComponent:@"iPod Click.aiff"];
                        
                        NSURL *fileUrl = [NSURL fileURLWithPath:filePath];
                        AudioServicesCreateSystemSoundID((__bridge CFURLRef)fileUrl, &soundID);
