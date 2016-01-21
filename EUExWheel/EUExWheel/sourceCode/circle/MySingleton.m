@@ -8,16 +8,16 @@
 
 #import "MySingleton.h"
 
-@implementation MySingleton
+@implementation MyUexWheelSingleton
 @synthesize rect = _rect;
 @synthesize y=_y;
 
-static MySingleton *_sharedMysingleton;
+static MyUexWheelSingleton *_sharedMysingleton;
 
-+(MySingleton *)sharedMySingleton
++(MyUexWheelSingleton *)sharedMySingleton
 {
     if (!_sharedMysingleton) {
-        _sharedMysingleton = [[MySingleton alloc]init];
+        _sharedMysingleton = [[MyUexWheelSingleton alloc]init];
     }
     return _sharedMysingleton;
 }

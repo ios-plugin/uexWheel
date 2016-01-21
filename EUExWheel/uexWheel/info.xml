@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <uexplugins>
-    <plugin uexName="uexWheel" version="3.0.13" build="13">
-        <info>13:添加IDE支持</info>
+    <plugin uexName="uexWheel" version="3.0.14" build="14">
+        <info>14:修复和天翼RTC插件一起打包时会冲突的bug</info>
+        <build>13:添加IDE支持</build>
 		<build>12:修复openSemicircle接口，点击按钮后页面无法操作问题</build>
         <build>11:修复全圆轮盘菜单调用close方法无效的问题</build>
         <build>10:添加监听方法uexWheel.onClick,当点击轮盘中心圆时触发</build>

@@ -48,7 +48,7 @@
         if (cdIconView.selected == YES)
         {
             
-                MySingleton *mySingleton = [MySingleton sharedMySingleton];
+                MyUexWheelSingleton *mySingleton = [MyUexWheelSingleton sharedMySingleton];
                 self.center = CGPointMake(CGRectGetMidX(mySingleton.rect), mySingleton.y);
     
             CGContextRef context = UIGraphicsGetCurrentContext();
@@ -66,7 +66,7 @@
         {
             
             [cdIconView.image drawInRect:rect];
-            MySingleton *mySingleton = [MySingleton sharedMySingleton];
+            MyUexWheelSingleton *mySingleton = [MyUexWheelSingleton sharedMySingleton];
             self.center = CGPointMake(CGRectGetMidX(mySingleton.rect), mySingleton.y+15);
         }
     }

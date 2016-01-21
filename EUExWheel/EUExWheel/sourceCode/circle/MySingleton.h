@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface MySingleton : NSObject
+@interface MyUexWheelSingleton : NSObject
 {
     CGRect _rect;
     CGFloat _y;
 }
-+(MySingleton *)sharedMySingleton;
++(MyUexWheelSingleton *)sharedMySingleton;
 
 @property (nonatomic,assign) CGRect rect;
 @property (nonatomic,assign) CGFloat y;
